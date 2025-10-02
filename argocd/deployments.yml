@@ -3,14 +3,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mydeploy
-specs:
+spec:
   replicas: 3
   selectors:
-    app: food
-  matchLabels:
-    template:
+    matchLabels:
       app: food
-    containers:
+  template:
+    metadata:
+    labels:
+      app: food
+    spec:
+      containers:
       - name: cont1
         image: shaikmustafa/dm
         ports:

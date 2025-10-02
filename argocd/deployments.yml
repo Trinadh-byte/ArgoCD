@@ -10,8 +10,8 @@ spec:
       app: food
   template:
     metadata:
-    labels:
-      app: food
+      labels:
+        app: food
     spec:
       containers:
       - name: cont1

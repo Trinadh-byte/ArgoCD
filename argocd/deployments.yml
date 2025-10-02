@@ -5,7 +5,7 @@ metadata:
   name: food
 spec:
   replicas: 3
-  selectors:
+  selector:
     matchLabels:
       app: food
   template:
